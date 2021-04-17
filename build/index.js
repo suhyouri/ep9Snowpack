@@ -25,10 +25,11 @@ const loader = new GLTFLoader();
 
 let model
 
-loader.load( 'models/Duck.gltf', function ( gltf ) {
+loader.load( 'models/snowman.gltf', function ( gltf ) {
 
     model = gltf.scene
     model.position.y = -0.5
+    model.sizes=0.5
 	scene.add( model );
 
 }, undefined, function ( error ) {
